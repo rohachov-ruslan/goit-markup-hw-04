@@ -21,10 +21,17 @@
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
+  /* Проблема со съезжанием текста*/
+  min-width: 0;
 }
 
 .team-ill {
   display: block;
+
+  /* Проблема со съзжанием картинок */
+  max-width: 100%;
+  height: auto;
 }
 
 .team-content-wrapper {
@@ -44,6 +51,12 @@
 .team-position {
   text-align: center;
   margin-bottom: 8px;
+}
+
+/* Проблема со съезжанием текста*/
+.team-caption,
+.team-position {
+  overflow-wrap: break-word;
 }
 
 .socials {
